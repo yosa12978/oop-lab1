@@ -1,0 +1,20 @@
+﻿<Window x:Class="sqrtwpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:sqrtwpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="236" Width="701">
+    <Grid>
+        <TextBox x:Name="InputVal" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="505"/>
+        <Button x:Name="CalcBtn" Content="Calculate" HorizontalAlignment="Left" Margin="520,10,0,0" VerticalAlignment="Top" Width="78" Height="18" Click="CalcBtn_Click"/>
+        <Label x:Name="DotnetOutLabel" Content="0 (Using .NET 6)" HorizontalAlignment="Left" Margin="10,53,0,0" VerticalAlignment="Top" Width="545" Height="28"/>
+        <Label x:Name="NewtonsOutLabel" Content="0 (Using Newton's Method)" HorizontalAlignment="Left" Margin="10,86,0,0" VerticalAlignment="Top" Width="545" Height="27"/>
+        <Button x:Name="StepBtn" Content="Step" HorizontalAlignment="Left" Margin="603,10,0,0" VerticalAlignment="Top" Width="78" Height="18" Click="StepButton_Click"/>
+        <Label x:Name="DeltaLabel" Content="Delta: 0" HorizontalAlignment="Left" Margin="10,113,0,0" VerticalAlignment="Top" Width="505"/>
+        <Label x:Name="IterationsLabel" Content="Iterations: 0" HorizontalAlignment="Left" Margin="10,139,0,0" VerticalAlignment="Top" Width="505"/>
+        <Label x:Name="EpsilonLabel" Content="Epsilon: 0" HorizontalAlignment="Left" Margin="10,165,0,0" VerticalAlignment="Top" Width="505"/>
+
+    </Grid>
+</Window>
